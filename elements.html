@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- 1 -->
+<h2>JavaScript Input</h2>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input does not fit paramiters";
+  } else {
+    text = "Input does fit paramiters";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+<br>
+<br>
+<br>
+<!-- 2 -->
+<h2>My First Page</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+<!-- 3 -->
+<body>
+    <img id="myImage" src="blooming-flower.jfif" style="width:400px">
+<br>
+<button onclick="document.getElementById('myImage').src='nun-jumpcare.jpg'">Click to blossom</button>
+<button onclick="document.getElementById('myImage').src='blooming-flower.jfif'">Go back</button>
+<!-- 4 -->
+<br>
+<br>
+<br>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Your set screen width is " + screen.width;
+</script>
+<!-- 5 -->
+<br>
+<br>
+<br>
+<h1>Setting Text Content</h1>
+
+<h2 id="01">Hello World!</h2>
+<h2 id="02">Hello Sweden!</h2>
+
+<script>
+var myElement = document.getElementById("01");
+myElement.textContent = "Hello Sweden!";
+</script>
+
+
+
+</body>
+</html>
